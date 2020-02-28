@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.empty {
+    visibility: hidden;
+}
+
+table {
+    /* table-layout: fixed; */
+    border-collapse: collapse;
+    margin: 20px auto;
+    /* width: 800px; */
+    border: 2px solid black;
+    
+}
+
+th, td {
+    /* width: 10%; */
+    /* width: 10px; */
+    overflow: hidden;
+    padding: 3px 7px;
+    border: 1px solid #666;
+}
+
+tr:nth-of-type(2n) {
+    background: #def;
+}
+
+th {
+    background: #cde;
+}
+
+thead tr:first-child {
+    border-bottom: 2px solid black;
+}
+
+th:first-child, td:first-child {
+    border-right: 2px solid black;
+    padding: 3px 10px;
+}
+
+table td:nth-child(2), table td:nth-child(6) {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+td:first-child {
+    color: #cde;
+    transition: .3s all;
+    cursor: pointer;
+    user-select: none;
+}
+
+td:first-child:hover {
+    color: red;
+}
+
+td.fav {
+    color: red;
+}
